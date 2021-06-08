@@ -1,5 +1,5 @@
 
-
+import React from 'react';
 function ExpenseTitle(props)
 {
     return (

@@ -1,6 +1,7 @@
 //ROOT component
 //component in react is a javascript funtion.
-
+import React from 'react';
+import NewExpense from './components/NewExpense/NewExpense';
 import Expenses from './components/Expenses/Expenses';
 import Card from './components/UI/Card';
 function App()
@@ -28,8 +29,8 @@ function App()
       ];
     return (
         <Card>
-            <h2>Lets start</h2>
             
+            <NewExpense />
           <Expenses item={expenses} />
         </Card> 
        
