@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Manage_Monthly_Expense
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The React Application basically manage expense and give you information about expense you did monthy.
+
+
 
 ## Available Scripts
 
