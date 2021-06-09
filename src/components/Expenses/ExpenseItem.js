@@ -5,6 +5,7 @@ import ExpenseDate from "./ExpenseDate";
 import ExpenseTitle from "./ExpenseTitle";
 import Card from '../UI/Card';
 
+
 // useState(); //calling useState here is error;
 
 function ExpenseItem(props) {
@@ -34,7 +35,8 @@ setTitle('Updated');
   const day = props.expenseDate.toLocaleString("en-US", { day: "2-digit" });
   const year = props.expenseDate.getFullYear();
   return (
-    
+    <div>
+      
     <Card className="expense-item">
       <ExpenseDate month={month} day={day} year={year} />
 
@@ -50,6 +52,7 @@ setTitle('Updated');
       {/* concept of state comes into picture when somethings changes and has to be re-evaluated! */}
 
     </Card>
+    </div>
   );
 }
 export default ExpenseItem;

@@ -3,6 +3,7 @@
 import React from 'react';
 import NewExpense from './components/NewExpense/NewExpense';
 import Expenses from './components/Expenses/Expenses';
+
 import Card from './components/UI/Card';
 function App()
 {
@@ -27,10 +28,19 @@ function App()
           date: new Date(2021, 5, 12),
         },
       ];
+
+function addExpenseHandlerfinal(expenseData)
+{
+console.log('in App.js');
+console.log(expenseData);
+}
+
+
     return (
         <Card>
-            
-            <NewExpense />
+         
+            <NewExpense  onSavingData= {addExpenseHandlerfinal}/>
+           
           <Expenses item={expenses} />
         </Card> 
        
