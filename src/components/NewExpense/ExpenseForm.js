@@ -26,7 +26,7 @@ function ExpenseForm(props) {
       //creating object combining all the date ,amount and title.
       {
         title: enterTitle,
-        amount: enterAmount,
+        amount: +enterAmount,
         date: new Date(enterDate),
       };
     //  console.log(expenseData);
@@ -39,6 +39,8 @@ function ExpenseForm(props) {
     setenterTitle("");
   }
 
+  // console.log("Expense.js");
+  // console.log(props.clickedfunction.toString());
   return (
     <form onSubmit={submitHandler}>
       <div className="new-expense__controls">
@@ -71,6 +73,7 @@ function ExpenseForm(props) {
       </div>
       <div className="new-expense__actions">
         <button type="submit">Add</button>
+        <button className="cancelbutton" type="button" onClick={props.clickedfunction} > Cancel</button>
       </div>
     </form>
   );

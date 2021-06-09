@@ -3,6 +3,7 @@ import "./Expenses.css";
 import ExpenseItem from "./ExpenseItem";
 import ExpenseFilter from "./ExpenseFilter";
 import Card from '../UI/Card';
+import ExpenseChart from './ExpensesChart';
 
 function Expenses(props) {
   const [filterYear, setFilterYear] = useState("2020");
@@ -12,22 +13,17 @@ function Expenses(props) {
     console.log(filterOption);
   }
 
-//   const filterExpenses = props.item.filter(
-//     (expense) => expense.date.getFullYear().toString() === filterYear
-//   );
+  const filterExpenses = props.item.filter(
+    (expense) => expense.date.getFullYear().toString() === filterYear.toString()
+  );
 
 
   return (
     <div>
     <Card className="expenses">
       <ExpenseFilter selectedYear={filterYear} onFilterChoice={filterChoosen} />
-      {props.item
-        .filter((expense) => {
-          return (
-            new Date(expense.date).getFullYear().toString() ===
-            filterYear.toString()
-          );
-        }).map((expense) => (
+     <ExpenseChart expenses={filterExpenses} />
+     {filterExpenses.length===0 ? <div className="noitem">No Expense Exist in List</div> : filterExpenses.map((expense) => (
         <ExpenseItem
         key={expense.id}
           expenseDate={expense.date}
