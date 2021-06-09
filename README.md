@@ -22,4 +22,6 @@ The React Application basically manage expense and give you information about ex
 - - - -
 
 ![ScreenShot](https://raw.github.com/itsanshika/Manage_Expense/main/src/Appimg/f1.jpg)
+- - - -
+![ScreenShot](https://raw.github.com/itsanshika/Manage_Expense/main/src/Appimg/f2.jpg)
 
