@@ -20,5 +20,6 @@ The React Application basically manage expense and give you information about ex
 
 ## View of Application
 - - - -
-![Alt text](Manage_Expense/src/Appimg/f1.jpg?raw=true "Optional Title")
+
+![ScreenShot](https://raw.github.com/itsanshika/Manage_Expense/main/src/Appimg/f1.jpg)
 
