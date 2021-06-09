@@ -2,6 +2,14 @@
 
 The React Application basically manage expense and give you information about expense you did monthy.
 
+## Current Features
+* Filter on the basis of year
+* Dynamic Style
+* Charts view
+* Dated Expenses
+
+## Upcoming TODO
+- [ ] An uncompleted task
 
 
 ## Available Scripts
