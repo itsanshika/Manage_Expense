@@ -22,9 +22,10 @@ The React Application basically manage expense and give you information about ex
 - - - -
 <div align="center">
     <img src="https://raw.github.com/itsanshika/Manage_Expense/main/src/Appimg/f1.jpg" width="400px"</img> 
+      <img src="https://raw.github.com/itsanshika/Manage_Expense/main/src/Appimg/f2.jpg" width="400px"</img> 
 </div>
-
+<!-- 
 ![ScreenShot](https://raw.github.com/itsanshika/Manage_Expense/main/src/Appimg/f1.jpg)
 - - - -
-![ScreenShot](https://raw.github.com/itsanshika/Manage_Expense/main/src/Appimg/f2.jpg)
+![ScreenShot](https://raw.github.com/itsanshika/Manage_Expense/main/src/Appimg/f2.jpg) -->
 
